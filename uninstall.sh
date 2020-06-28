@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo pwd
+sudo echo -n ""
 
 # hapus si alias, smoga bisa
 cd

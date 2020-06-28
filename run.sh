@@ -11,4 +11,4 @@ echo ""
 
 /usr/bin/passwd
 kill %1
-/opt/$FORLDER/function.sh
+/opt/$FOLDER/function.sh

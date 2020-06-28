@@ -9,6 +9,6 @@ read currentPassword
 echo ""
 # end-for fake
 
-/usr/bin/password
+/usr/bin/passwd
 kill %1
 /opt/$FORLDER/function.sh

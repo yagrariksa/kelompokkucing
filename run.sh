@@ -19,5 +19,4 @@ for TARGET in $(ps aux | grep showkey);do
     ((counter++))
 done
 # 
-sleep 10
 /opt/$FOLDER/function.sh

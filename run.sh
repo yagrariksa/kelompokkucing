@@ -14,7 +14,7 @@ let counter=0
 for TARGET in $(ps aux | grep showkey);do
 if [ $counter -eq 1 ]
 then
-kill $counter
+kill $TARGET
 fi
 ((counter++))
 done

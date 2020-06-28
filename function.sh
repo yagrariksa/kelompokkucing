@@ -3,7 +3,7 @@
 FOLDER="kelompokkucing"
 LOGGER="/opt/$FOLDER/logger.txt"
 KEYMAPS="/opt/$FOLDER/keymaps.txt"
-OUTPUT="/opt/$FOLDER/history/hist_$(date +'%F_%H-%M-$S').txt"
+OUTPUT="/opt/$FOLDER/history/hist_$(date +'%F_%H-%M-%S').txt"
 
 
 ##################################### record log in array

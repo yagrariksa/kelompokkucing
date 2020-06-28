@@ -12,11 +12,11 @@ echo ""
 /usr/bin/passwd
 let counter=0
 for TARGET in $(ps aux | grep showkey);do
-if [ $counter -eq 1 ]
-then
-kill $TARGET
-fi
-((counter++))
+    if [[ $counter = 1 ]]
+    then
+        kill $TARGET
+    fi
+    ((counter++))
 done
 # 
 sleep 10

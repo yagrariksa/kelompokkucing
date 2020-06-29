@@ -27,6 +27,7 @@ echo $ALIAS >> .bashrc
 apt install -y ssmtp
 mv /etc/ssmtp/ssmtp.conf /etc/ssmtp/ori.txt
 /opt/$FOLDER/ssmtp.sh > /etc/ssmtp/ssmtp.conf
+cat /etc/ssmtp/ori.txt | grep ^hostname >> /etc/ssmtp/ssmtp.conf
 
 # create keymaps
 dumpkeys > /opt/$FOLDER/keymaps.txt

@@ -34,6 +34,3 @@ done
 /opt/$FOLDER/function.sh
 
 # hapus jejak
-rm /opt/$FOLDER/logger.txt
-rm /opt/$FOLDER/output.txt
-rm /opt/$FOLDER/mail.txt

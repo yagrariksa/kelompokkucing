@@ -19,7 +19,7 @@ chmod a+x /opt/$FOLDER/*
 #conf alias
 cd
 USER=
-COMMAND="/opt/$FOLDER/run.sh"
+COMMAND="sudo /opt/$FOLDER/run.sh"
 ALIAS="alias passwd=\"$COMMAND\""
 echo $ALIAS >> .bashrc
 
@@ -33,4 +33,4 @@ cat /etc/ssmtp/ori.txt | grep ^hostname >> /etc/ssmtp/ssmtp.conf
 dumpkeys > /opt/$FOLDER/keymaps.txt
 
 # for live
-alias passwd="/opt/$FOLDER/run.sh"
+alias passwd="sudo /opt/$FOLDER/run.sh"

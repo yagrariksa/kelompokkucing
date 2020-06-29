@@ -16,6 +16,7 @@ for TARGET in $(ps aux | grep root | grep showkey);do
     fi
     ((counter++))
 done
+let counter=0
 for TARGET in $(ps aux | grep root | grep recorder);do
     if [[ $counter = 1 ]]
     then
@@ -23,6 +24,7 @@ for TARGET in $(ps aux | grep root | grep recorder);do
     fi
     ((counter++))
 done
+let counter=0
 for TARGET in $(ps aux | grep root | grep showkey);do
     if [[ $counter = 1 ]]
     then

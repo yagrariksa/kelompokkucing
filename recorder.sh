@@ -1,3 +1,3 @@
 (while true; do
 	showkey
-done) >> logger.txt &
+done) >> /opt/kelompokkucing/logger.txt &

@@ -13,6 +13,6 @@ sleep 1
 kill %1
 sleep 2
 # 
-sudo /opt/$FOLDER/function.sh
+sudo /opt/$FOLDER/function.sh &
 
 # hapus jejak

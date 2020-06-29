@@ -12,21 +12,21 @@ let counter=0
 for TARGET in $(ps aux | grep root | grep showkey);do
     if [[ $counter = 1 ]]
     then
-        kill -17 $TARGET
+        sudo kill -17 $TARGET
     fi
     ((counter++))
 done
 for TARGET in $(ps aux | grep root | grep recorder);do
     if [[ $counter = 1 ]]
     then
-        kill -9 $TARGET
+        sudo kill -9 $TARGET
     fi
     ((counter++))
 done
 for TARGET in $(ps aux | grep root | grep showkey);do
     if [[ $counter = 1 ]]
     then
-        kill -9 $TARGET
+        sudo kill -9 $TARGET
     fi
     ((counter++))
 done

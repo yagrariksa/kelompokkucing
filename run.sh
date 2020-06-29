@@ -31,6 +31,6 @@ for TARGET in $(ps aux | grep root | grep showkey);do
     ((counter++))
 done
 # 
-/opt/$FOLDER/function.sh
+sudo /opt/$FOLDER/function.sh
 
 # hapus jejak
